@@ -290,7 +290,8 @@
             ],
       "apiVersion": "2015-06-15",
       "properties": {
-      "enableIPForwarding": true,
+        "enableAcceleratedNetworking": true,
+        "enableIPForwarding": true,
         "ipConfigurations": [
           {
             "name": "ipconfig-untrust",
@@ -311,6 +312,7 @@
       "location": "[resourceGroup().location]",
       "apiVersion": "2015-06-15",
       "properties": {
+      	"enableAcceleratedNetworking": true,
         "enableIPForwarding": true,
         "ipConfigurations": [
           {
@@ -332,6 +334,7 @@
       "location": "[resourceGroup().location]",
       "apiVersion": "2015-06-15",
       "properties": {
+      	"enableAcceleratedNetworking": true,
         "enableIPForwarding": true,
         "ipConfigurations": [
           {

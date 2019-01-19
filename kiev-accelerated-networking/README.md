@@ -7,7 +7,7 @@ This ARM template deploys the beta version of the VM-Series next generation fire
 - A Storage Account
 - A Network Security Group
 
-[<img src="http://azuredeploy.net/deploybutton.png"/>](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fsuspenceiskillinu%2Fazure%2Fmaster%2FAzureDeploy.json)
+[<img src="http://azuredeploy.net/deploybutton.png"/>](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fsuspenceiskillinu%2Fazure%2Fmaster%2Fkiev-accelerated-networking%2FAzureDeploy.json)
 
 # Note
 This is an unofficial repository for Azure templates to deploy VM-Series Next-Generation firewalls from Palo Alto Networks.

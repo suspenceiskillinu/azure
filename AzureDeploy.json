@@ -28,7 +28,7 @@
        "metadata": {
           "description": "EXISTING Availability Set name for Firewalls"
        },
-       "defaultValue": "AS-FW"
+       "defaultValue": "smitchell"
     },
     "vmSize": {
        "type": "string",

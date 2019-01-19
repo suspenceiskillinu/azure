@@ -166,6 +166,7 @@
     },
     "publicIPAddressName": {
       "type": "string",
+      "defaultValue": "smitchell",
       "metadata": {
         "description": "Name of FW1 MGMT Public Address"
       }

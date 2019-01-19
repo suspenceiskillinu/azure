@@ -1,6 +1,6 @@
 # VM-Series Beta w/Accelerated Networking Template
 
-This ARM template deploys the beta version of the VM-Series next generation firewall VM into an existing Azure resource group. It requires the following to be predefined:
+This ARM template deploys the beta version of the VM-Series next generation firewall VM into an existing Azure resource group with the following resources predefined:
 
 - A Virtual Network with 4 subnets (Management, Untrust, Trust, and DMZ)
 - An Availability Set

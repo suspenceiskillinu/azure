@@ -289,7 +289,7 @@
       "location": "[resourceGroup().location]",
        "dependsOn": [
             ],
-      "apiVersion": "2015-06-15",
+      "apiVersion": "2016-09-01",
       "properties": {
         "enableAcceleratedNetworking": true,
         "enableIPForwarding": true,
@@ -311,7 +311,7 @@
       "name": "[concat(variables('nicName'), '2')]",
       "type": "Microsoft.Network/networkInterfaces",
       "location": "[resourceGroup().location]",
-      "apiVersion": "2015-06-15",
+      "apiVersion": "2016-09-01",
       "properties": {
       	"enableAcceleratedNetworking": true,
         "enableIPForwarding": true,
@@ -333,7 +333,7 @@
       "name": "[concat(variables('nicName'), '3')]",
       "type": "Microsoft.Network/networkInterfaces",
       "location": "[resourceGroup().location]",
-      "apiVersion": "2015-06-15",
+      "apiVersion": "2016-09-01",
       "properties": {
       	"enableAcceleratedNetworking": true,
         "enableIPForwarding": true,

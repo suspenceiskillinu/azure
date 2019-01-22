@@ -166,7 +166,7 @@
     },
     "publicIPAddressName": {
       "type": "string",
-      "defaultValue": "fw-mgmtpip-out-007-dev-nva-bi-westus",
+      "defaultValue": "fw-mgmtpip-out-007-dev-nva-exp-westus",
       "metadata": {
         "description": "Name of FW1 MGMT Public Address"
       }

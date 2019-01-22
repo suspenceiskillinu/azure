@@ -59,6 +59,8 @@
        "type": "string",
        "allowedValues": [
           "byol",
+          "bundle1",
+          "bundle2"
        ],
        "metadata": {
           "description": "Firewall License Model"

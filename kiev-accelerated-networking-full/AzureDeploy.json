@@ -258,7 +258,7 @@
       "sku": {
           "name": "Aligned"
       }
-    }
+    },
     {
       "apiVersion": "2017-08-01",
       "type": "Microsoft.Network/publicIPAddresses",

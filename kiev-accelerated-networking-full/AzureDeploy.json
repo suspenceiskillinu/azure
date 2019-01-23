@@ -4,10 +4,6 @@
   "parameters": {
     "vmName": {
        "type": "string",
-       "metadata": {
-          "description": "Name of VM-Series FW in the Azure portal"
-       },
-       "defaultValue": "fw-out-001-nva-exp-westus"
     },
     "fwAvSet": {
        "type": "string",

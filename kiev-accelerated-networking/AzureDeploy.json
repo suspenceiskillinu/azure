@@ -7,18 +7,18 @@
        "metadata": {
           "description": "Name of VM-Series FW in the Azure portal"
        },
-       "defaultValue": "VM-FW1"
+       "defaultValue": "fw-out-001-nva-exp-westus"
     },
     "storageAccountName": {
       "type": "string",
-      "defaultValue" : "smitchell",
+      "defaultValue" : "storfwout31nvaexpwestus",
       "metadata": {
         "description": "Name of the EXISTING storage account used to store the VM's disks"
       }
     },
     "storageAccountExistingRG": {
        "type": "string",
-       "defaultValue" : "smitchell",
+       "defaultValue" : "RG-NetSec-Exploratorium",
        "metadata": {
           "description": "Storage Accounts Resource Group."
        }
@@ -28,7 +28,7 @@
        "metadata": {
           "description": "EXISTING Availability Set name for Firewalls"
        },
-       "defaultValue": "smitchell"
+       "defaultValue": "aset-fw-out-001-dev-nva-exp-westus"
     },
     "vmSize": {
        "type": "string",
@@ -59,6 +59,8 @@
        "type": "string",
        "allowedValues": [
           "byol",
+          "bundle1",
+          "bundle2"
        ],
        "metadata": {
           "description": "Firewall License Model"
@@ -70,109 +72,109 @@
       "metadata": {
         "description": "Name of the EXISTING Virtual Network (VNET)"
       },
-      "defaultValue": "smitchell"
+      "defaultValue": "VNET-USWEST-Dev-Exp"
     },
     "virtualNetworkAddressPrefix": {
       "type": "string",
-      "defaultValue": "10.0.0.0/16",
+      "defaultValue": "10.116.241.0/24",
       "metadata": {
         "description": "EXISTING Virtual network address CIDR"
       }
     },
     "virtualNetworkExistingRGName": {
       "type": "string",
-      "defaultValue": "smitchell",
+      "defaultValue": "RG-NetSec-Exploratorium",
       "metadata": {
         "description": "Name of resource group of EXISTING VNET"
       }
     },
     "subnet0Name": {
       "type": "string",
-      "defaultValue": "Management",
+      "defaultValue": "Network",
       "metadata": {
         "description": "EXISTING Subnet for Management"
       }
     },
     "subnet1Name": {
       "type": "string",
-      "defaultValue": "Untrust",
+      "defaultValue": "NetSec-FW-Untrust",
       "metadata": {
         "description": "EXISTING Subnet for Untrust"
       }
     },
     "subnet2Name": {
       "type": "string",
-      "defaultValue": "Trust",
+      "defaultValue": "NetSec-FW-Trust",
       "metadata": {
         "description": "EXISTING Subnet for Trust"
       }
     },
     "subnet3Name": {
       "type": "string",
-      "defaultValue": "DMZ",
+      "defaultValue": "NetSec-FW-DMZ",
       "metadata": {
         "description": "EXISTING Subnet for DMZ"
       }
     },
     "subnet0Prefix": {
       "type": "string",
-      "defaultValue": "10.0.0.0/24",
+      "defaultValue": "10.116.241.0/26",
       "metadata": {
         "description": "EXISTING Mgmt subnet CIDR"
       }
     },
     "subnet1Prefix": {
       "type": "string",
-      "defaultValue": "10.0.1.0/24",
+      "defaultValue": "10.116.241.64/27",
       "metadata": {
         "description": "EXISTING Untrust subnet CIDR"
       }
     },
     "subnet2Prefix": {
       "type": "string",
-      "defaultValue": "10.0.2.0/24",
+      "defaultValue": "10.116.241.128/27",
       "metadata": {
         "description": "EXISTING Trust subnet CIDR"
       }
     },
     "subnet3Prefix": {
       "type": "string",
-      "defaultValue": "10.0.3.0/24",
+      "defaultValue": "10.116.241.192/27",
       "metadata": {
         "description": "EXISTING DMZ subnet CIDR"
       }
     },
     "subnet0Address": {
       "type": "string",
-      "defaultValue": "10.0.0.4",
+      "defaultValue": "10.116.241.4",
       "metadata": {
         "description": "Mgmt subnet static address"
       }
     },
     "subnet1Address": {
       "type": "string",
-      "defaultValue": "10.0.1.4",
+      "defaultValue": "10.116.241.68",
       "metadata": {
         "description": "Untrust subnet static address"
       }
     },
     "subnet2Address": {
       "type": "string",
-      "defaultValue": "10.0.2.4",
+      "defaultValue": "10.116.241.132",
       "metadata": {
         "description": "Trust subnet static address"
       }
     },
     "subnet3Address": {
       "type": "string",
-      "defaultValue": "10.0.3.4",
+      "defaultValue": "10.116.241.196",
       "metadata": {
         "description": "DMZ subnet static address"
       }
     },
     "adminUsername": {
       "type": "string",
-      "defaultValue": "azureadmin",
+      "defaultValue": "fwnvaexpadmin",
       "metadata": {
         "description": "Username of the administrator account of VM-Series"
       }
@@ -186,14 +188,14 @@
     },
     "publicIPAddressName": {
       "type": "string",
-      "defaultValue": "smitchell",
+      "defaultValue": "fw-mgmtpip-out-007-dev-nva-exp-westus",
       "metadata": {
         "description": "Name of FW1 MGMT Public Address"
       }
     },
     "nsgName": {
       "type": "string",
-      "defaultValue": "smitchell",
+      "defaultValue": "NSG-USWest-Dev-PaaS-Exploratorium",
       "metadata": {
         "description": "Name of existing Network Security Group for MGMT FW interface"
       }

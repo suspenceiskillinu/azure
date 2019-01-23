@@ -9,20 +9,6 @@
        },
        "defaultValue": "fw-out-001-nva-exp-westus"
     },
-    "storageAccountName": {
-      "type": "string",
-      "defaultValue" : "storfwout31nvaexpwestus",
-      "metadata": {
-        "description": "Name of the EXISTING storage account used to store the VM's disks"
-      }
-    },
-    "storageAccountExistingRG": {
-       "type": "string",
-       "defaultValue" : "RG-NetSec-Exploratorium",
-       "metadata": {
-          "description": "Storage Accounts Resource Group."
-       }
-    },
     "fwAvSet": {
        "type": "string",
        "metadata": {
@@ -241,7 +227,6 @@
         }
       }
     ],
-    "storageAccountId": "[resourceId(parameters('storageAccountExistingRG'),'Microsoft.Storage/StorageAccounts',parameters('storageAccountName'))]"
   },
   "resources": [
     {

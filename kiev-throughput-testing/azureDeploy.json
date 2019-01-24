@@ -10,8 +10,7 @@
                 "Standard_D4", 
 				"Standard_D4_v2",
 				"Standard_D5",
-				"Standard_D5_v2",
-                "Standard_A4"	    
+				"Standard_D5_v2",    
             ],
             "metadata": {
                 "description": "Azure VM size for VM-Series"
@@ -579,7 +578,7 @@
             "location": "[resourceGroup().location]",
             "plan": {
                 "name": "bundle2",
-                "product": "vmseries1",
+                "product": "vmseries1-beta-preview",
                 "publisher": "paloaltonetworks"
             },
             "properties": {
@@ -597,9 +596,9 @@
                 "storageProfile": {
                     "imageReference": {
                         "publisher": "paloaltonetworks",
-                        "offer": "vmseries1",
+                        "offer": "vmseries1-beta-preview",
                         "sku": "bundle2",
-                        "version": "8.0.0"
+                        "version": "9.0.0"
                     },
                     "osDisk": {
                         "name": "osdisk",
@@ -650,7 +649,7 @@
             "location": "[resourceGroup().location]",
             "plan": {
                 "name": "bundle2",
-                "product": "vmseries1",
+                "product": "vmseries1-beta-preview",
                 "publisher": "paloaltonetworks"
             },
             "properties": {
@@ -668,9 +667,9 @@
                 "storageProfile": {
                     "imageReference": {
                         "publisher": "paloaltonetworks",
-                        "offer": "vmseries1",
+                        "offer": "vmseries1-beta-preview",
                         "sku": "bundle2",
-                        "version": "8.0.0"
+                        "version": "9.0.0"
                     },
                     "osDisk": {
                         "name": "osdisk",

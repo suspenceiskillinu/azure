@@ -1,4 +1,4 @@
-# SE Summit - Load Balanced Outbound Traffic DEMO
+Throughput Testing Demo
 
 [<img src="http://azuredeploy.net/deploybutton.png"/>](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fazure%2Fkiev-throughput-testing%2Fmaster%2FazureDeploy.json)
 

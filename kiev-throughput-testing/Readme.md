@@ -1,6 +1,6 @@
 # SE Summit - Load Balanced Outbound Traffic DEMO
 
-[<img src="http://azuredeploy.net/deploybutton.png"/>](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fjpeezus%2FSE-Summit%2Fmaster%2FazureDeploy.json)
+[<img src="http://azuredeploy.net/deploybutton.png"/>](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fazure%2Fkiev-throughput-testing%2Fmaster%2FazureDeploy.json)
 
 This template deploys a firewall environment that includes:
 

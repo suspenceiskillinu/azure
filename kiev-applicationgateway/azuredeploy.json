@@ -232,7 +232,7 @@
     "location" : "[resourceGroup().location]",
     "rgname" : "[resourceGroup().name]",
     "LoadBalancerType" : "layer-7",
-    "firewallVmCount" : 2,
+    "firewallVmCount" : 1,
     "baseUrl" : "https://raw.githubusercontent.com/suspenceiskillinu/azure/kiev-applicationgateway/master/",
     "nsgURL" : "[concat(variables('baseUrl'),'/nsg-new.json')]",
     "vnetURL" : "[concat(variables('baseUrl'),'/vnet-', parameters('virtualNetworkNewOrExisting'),'.json')]",

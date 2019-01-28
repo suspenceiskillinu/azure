@@ -158,16 +158,6 @@
            "description": "byol = Bring Your Own License; bundle1 = Bundle 1 PAYG (Hourly); bundle2 = Bundle 2 PAYG (Hourly)"
        }
     },
-    "imageVersion": {
-       "type": "string",
-       "allowedValues": [
-          "9.0.0",
-       ],
-       "metadata": {
-          "description": "PAN OS Version"
-       },
-       "defaultValue": "9.0.0"
-    },
     "firewallVmName": {
        "type": "string",
        "metadata": {

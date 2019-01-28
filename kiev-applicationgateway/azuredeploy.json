@@ -324,29 +324,6 @@
       }
     },
      {
-      "name": "SettingUpStorageAccount",
-      "type": "Microsoft.Resources/deployments",
-      "apiVersion": "2015-01-01",
-      "properties": {
-        "mode": "Incremental",
-        "templateLink": {
-          "uri": "[variables('storageAccountSetupURL')]",
-          "contentVersion": "1.0.0.0"
-        },
-        "parameters": {
-          "location": {
-            "value": "[variables('location')]"
-          },
-          "storageAccountType": {
-            "value": "[parameters('storageAccountType')]"
-          },
-          "storageAccountName": {
-            "value": "[parameters('storageAccountName')]"
-          }
-        }
-      }
-     },
-     {
       "name": "SetupVMSeries",
       "type": "Microsoft.Resources/deployments",
       "apiVersion": "2015-01-01",
@@ -417,15 +394,6 @@
           "MgmtPublicIPAddressName": {
                "value": "[parameters('MgmtPublicIPAddressName')]"
           },
-          "storageAccountName": {
-               "value": "[reference('SettingUpStorageAccount').outputs.sid.value]"
-          },
-          "storageAccountNewOrExisting": {
-               "value": "[parameters('storageAccountNewOrExisting')]"
-          },
-          "storageAccountType": {
-               "value": "[parameters('storageAccountType')]"
-          },
           "authenticationType": {
                "value": "[parameters('authenticationType')]"
           },
@@ -483,9 +451,6 @@
           "contentVersion": "1.0.0.0"
         },
         "parameters": {
-          "storageAccountName": {
-               "value": "[reference('SettingUpStorageAccount').outputs.sid.value]"
-          },
           "virtualNetworkName": {
                "value": "[reference('SetupVNET').outputs.vnetName.value]"
           },

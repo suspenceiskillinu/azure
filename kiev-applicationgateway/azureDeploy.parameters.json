@@ -16,12 +16,6 @@
     },
     "password": {
       "value": "DEFAULT-PASSWORD"
-    },
-    "storageAccountName": {
-      "value": "DEFAULT-STORAGE"
-    },
-    "storageAccountNewOrExisting": {
-      "value": "existing"
     }
   }
 }

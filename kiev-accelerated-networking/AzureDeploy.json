@@ -264,7 +264,7 @@
       "name": "[concat(variables('nicName'), '0')]",
       "type": "Microsoft.Network/networkInterfaces",
       "location": "[resourceGroup().location]",
-      "apiVersion": "2015-06-15",
+      "apiVersion": "2016-09-01",
       "dependsOn": [
             "[concat('Microsoft.Network/publicIPAddresses/', parameters('publicIPAddressName'))]"
         ],

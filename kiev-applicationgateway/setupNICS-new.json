@@ -102,6 +102,7 @@
         "[concat('SetupNetworkInterfaceUntrust-', parameters('nicName'))]"
       ],
       "properties": {
+        "enableAcceleratedNetworking": true,
         "enableIPForwarding": true,
         "ipConfigurations": [
           {

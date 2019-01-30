@@ -29,6 +29,7 @@
       "location": "[parameters('location')]",
       "apiVersion": "2015-06-15",
       "properties": {
+      "enableAcceleratedNetworking": true,
       "enableIPForwarding": true,
         "ipConfigurations": [
           {

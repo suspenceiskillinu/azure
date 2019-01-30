@@ -211,14 +211,8 @@
       "type": "Microsoft.Compute/availabilitySets",
       "name": "[variables('availabilitySetName')]",
       "location": "[resourceGroup().location]",
-      "properties": {
-          "platformUpdateDomainCount": "5",
-          "platformFaultDomainCount": "2",
-          "virtualMachines": []
-      },
-      "tags": {},
       "sku": {
-          "name": "Aligned"
+          "name": "Classic"
       }
     },
     {

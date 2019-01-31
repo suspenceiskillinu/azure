@@ -6,12 +6,11 @@
             "type": "string",
             "allowedValues": [
                   "Standard_D3",
-				          "Standard_D3_v2",
+				  "Standard_D3_v2",
                   "Standard_D4",
-				          "Standard_D4_v2",
-				          "Standard_D5",
-				          "Standard_D5_v2",
-                  "Standard_A4"
+				  "Standard_D4_v2",
+				  "Standard_D5",
+				  "Standard_D5_v2"
             ],
             "metadata": {
                 "description": "Azure VM size for VM-Series"
@@ -918,13 +917,14 @@
             }
         },
         {
-            "apiVersion": "2015-06-15",
+            "apiVersion": "2016-09-01",
             "type": "Microsoft.Network/networkInterfaces",
             "name": "INT-FW1-Untrust",
             "location": "[resourceGroup().location]",
             "dependsOn": [
                 "[resourceId('Microsoft.Network/virtualNetworks', parameters('vnetName'))]"            ],
             "properties": {
+            	"enableAcceleratedNetworking": true,
                 "enableIPForwarding": true,
                 "ipConfigurations": [
                 	{
@@ -945,13 +945,14 @@
             }
         },
         {
-            "apiVersion": "2015-06-15",
+            "apiVersion": "2016-09-01",
             "type": "Microsoft.Network/networkInterfaces",
             "name": "INT-FW2-Untrust",
             "location": "[resourceGroup().location]",
             "dependsOn": [
                 "[resourceId('Microsoft.Network/virtualNetworks', parameters('vnetName'))]"            ],
             "properties": {
+            	"enableAcceleratedNetworking": true,
                 "enableIPForwarding": true,
                 "ipConfigurations": [
                     {
@@ -971,13 +972,14 @@
             }
         },
         {
-            "apiVersion": "2015-06-15",
+            "apiVersion": "2016-09-01",
             "type": "Microsoft.Network/networkInterfaces",
             "name": "INT-FW3-Untrust",
             "location": "[resourceGroup().location]",
             "dependsOn": [
                 "[resourceId('Microsoft.Network/virtualNetworks', parameters('vnetName'))]"            ],
             "properties": {
+            	"enableAcceleratedNetworking": true,
                 "enableIPForwarding": true,
                 "ipConfigurations": [
                     {
@@ -997,13 +999,14 @@
             }
         },
         {
-            "apiVersion": "2015-06-15",
+            "apiVersion": "2016-09-01",
             "type": "Microsoft.Network/networkInterfaces",
             "name": "INT-FW4-Untrust",
             "location": "[resourceGroup().location]",
             "dependsOn": [
                 "[resourceId('Microsoft.Network/virtualNetworks', parameters('vnetName'))]"            ],
             "properties": {
+            	"enableAcceleratedNetworking": true,
                 "enableIPForwarding": true,
                 "ipConfigurations": [
                     {
@@ -1023,13 +1026,14 @@
             }
         },
         {
-            "apiVersion": "2015-06-15",
+            "apiVersion": "2016-09-01",
             "type": "Microsoft.Network/networkInterfaces",
             "name": "INT-FW5-Untrust",
             "location": "[resourceGroup().location]",
             "dependsOn": [
                 "[resourceId('Microsoft.Network/virtualNetworks', parameters('vnetName'))]"            ],
             "properties": {
+            	"enableAcceleratedNetworking": true,
                 "enableIPForwarding": true,
                 "ipConfigurations": [
                     {
@@ -1049,13 +1053,14 @@
             }
         },
         {
-            "apiVersion": "2015-06-15",
+            "apiVersion": "2016-09-01",
             "type": "Microsoft.Network/networkInterfaces",
             "name": "INT-FW6-Untrust",
             "location": "[resourceGroup().location]",
             "dependsOn": [
                 "[resourceId('Microsoft.Network/virtualNetworks', parameters('vnetName'))]"            ],
             "properties": {
+            	"enableAcceleratedNetworking": true,
                 "enableIPForwarding": true,
                 "ipConfigurations": [
                     {
@@ -1075,13 +1080,14 @@
             }
         },
         {
-            "apiVersion": "2015-06-15",
+            "apiVersion": "2016-09-01",
             "type": "Microsoft.Network/networkInterfaces",
             "name": "INT-FW7-Untrust",
             "location": "[resourceGroup().location]",
             "dependsOn": [
                 "[resourceId('Microsoft.Network/virtualNetworks', parameters('vnetName'))]"            ],
             "properties": {
+            	"enableAcceleratedNetworking": true,
                 "enableIPForwarding": true,
                 "ipConfigurations": [
                     {
@@ -1101,13 +1107,14 @@
             }
         },
         {
-            "apiVersion": "2015-06-15",
+            "apiVersion": "2016-09-01",
             "type": "Microsoft.Network/networkInterfaces",
             "name": "INT-FW8-Untrust",
             "location": "[resourceGroup().location]",
             "dependsOn": [
                 "[resourceId('Microsoft.Network/virtualNetworks', parameters('vnetName'))]"            ],
             "properties": {
+            	"enableAcceleratedNetworking": true,
                 "enableIPForwarding": true,
                 "ipConfigurations": [
                     {
@@ -1127,13 +1134,14 @@
             }
         },
         {
-            "apiVersion": "2015-06-15",
+            "apiVersion": "2016-09-01",
             "type": "Microsoft.Network/networkInterfaces",
             "name": "INT-FW9-Untrust",
             "location": "[resourceGroup().location]",
             "dependsOn": [
                 "[resourceId('Microsoft.Network/virtualNetworks', parameters('vnetName'))]"            ],
             "properties": {
+            	"enableAcceleratedNetworking": true,
                 "enableIPForwarding": true,
                 "ipConfigurations": [
                     {
@@ -1153,16 +1161,16 @@
             }
         },
         {
-            "apiVersion": "2015-06-15",
+            "apiVersion": "2016-09-01",
             "type": "Microsoft.Network/networkInterfaces",
             "name": "INT-FW1-Trust",
             "location": "[resourceGroup().location]",
             "dependsOn": [
                 "[resourceId('Microsoft.Network/virtualNetworks', parameters('vnetName'))]",
                 "[resourceId('Microsoft.Network/loadBalancers', 'LB-Egress')]"
-
             ],
             "properties": {
+            	"enableAcceleratedNetworking": true,
                 "enableIPForwarding": true,
                 "ipConfigurations": [
                     {
@@ -1184,7 +1192,7 @@
             }
         },
         {
-            "apiVersion": "2015-06-15",
+            "apiVersion": "2016-09-01",
             "type": "Microsoft.Network/networkInterfaces",
             "name": "INT-FW2-Trust",
             "location": "[resourceGroup().location]",
@@ -1193,6 +1201,7 @@
                 "[resourceId('Microsoft.Network/loadBalancers', 'LB-Egress')]"
             ],
             "properties": {
+            	"enableAcceleratedNetworking": true,
                 "enableIPForwarding": true,
                 "ipConfigurations": [
                     {
@@ -1214,7 +1223,7 @@
             }
         },
         {
-            "apiVersion": "2015-06-15",
+            "apiVersion": "2016-09-01",
             "type": "Microsoft.Network/networkInterfaces",
             "name": "INT-FW3-Trust",
             "location": "[resourceGroup().location]",
@@ -1223,6 +1232,7 @@
                 "[resourceId('Microsoft.Network/loadBalancers', 'LB-Egress')]"
             ],
             "properties": {
+            	"enableAcceleratedNetworking": true,
                 "enableIPForwarding": true,
                 "ipConfigurations": [
                     {
@@ -1244,7 +1254,7 @@
             }
         },
         {
-            "apiVersion": "2015-06-15",
+            "apiVersion": "2016-09-01",
             "type": "Microsoft.Network/networkInterfaces",
             "name": "INT-FW4-Trust",
             "location": "[resourceGroup().location]",
@@ -1253,6 +1263,7 @@
                 "[resourceId('Microsoft.Network/loadBalancers', 'LB-Egress')]"
             ],
             "properties": {
+            	"enableAcceleratedNetworking": true,
                 "enableIPForwarding": true,
                 "ipConfigurations": [
                     {
@@ -1274,7 +1285,7 @@
             }
         },
         {
-            "apiVersion": "2015-06-15",
+            "apiVersion": "2016-09-01",
             "type": "Microsoft.Network/networkInterfaces",
             "name": "INT-FW5-Trust",
             "location": "[resourceGroup().location]",
@@ -1283,6 +1294,7 @@
                 "[resourceId('Microsoft.Network/loadBalancers', 'LB-Egress')]"
             ],
             "properties": {
+            	"enableAcceleratedNetworking": true,
                 "enableIPForwarding": true,
                 "ipConfigurations": [
                     {
@@ -1304,7 +1316,7 @@
             }
         },
         {
-            "apiVersion": "2015-06-15",
+            "apiVersion": "2016-09-01",
             "type": "Microsoft.Network/networkInterfaces",
             "name": "INT-FW6-Trust",
             "location": "[resourceGroup().location]",
@@ -1313,6 +1325,7 @@
                 "[resourceId('Microsoft.Network/loadBalancers', 'LB-Egress')]"
             ],
             "properties": {
+            	"enableAcceleratedNetworking": true,
                 "enableIPForwarding": true,
                 "ipConfigurations": [
                     {
@@ -1334,7 +1347,7 @@
             }
         },
         {
-            "apiVersion": "2015-06-15",
+            "apiVersion": "2016-09-01",
             "type": "Microsoft.Network/networkInterfaces",
             "name": "INT-FW7-Trust",
             "location": "[resourceGroup().location]",
@@ -1343,6 +1356,7 @@
                 "[resourceId('Microsoft.Network/loadBalancers', 'LB-Egress')]"
             ],
             "properties": {
+            	"enableAcceleratedNetworking": true,
                 "enableIPForwarding": true,
                 "ipConfigurations": [
                     {
@@ -1364,7 +1378,7 @@
             }
         },
         {
-            "apiVersion": "2015-06-15",
+            "apiVersion": "2016-09-01",
             "type": "Microsoft.Network/networkInterfaces",
             "name": "INT-FW8-Trust",
             "location": "[resourceGroup().location]",
@@ -1373,6 +1387,7 @@
                 "[resourceId('Microsoft.Network/loadBalancers', 'LB-Egress')]"
             ],
             "properties": {
+            	"enableAcceleratedNetworking": true,
                 "enableIPForwarding": true,
                 "ipConfigurations": [
                     {
@@ -1394,7 +1409,7 @@
             }
         },
         {
-            "apiVersion": "2015-06-15",
+            "apiVersion": "2016-09-01",
             "type": "Microsoft.Network/networkInterfaces",
             "name": "INT-FW9-Trust",
             "location": "[resourceGroup().location]",
@@ -1403,6 +1418,7 @@
                 "[resourceId('Microsoft.Network/loadBalancers', 'LB-Egress')]"
             ],
             "properties": {
+            	"enableAcceleratedNetworking": true,
                 "enableIPForwarding": true,
                 "ipConfigurations": [
                     {
@@ -1424,13 +1440,14 @@
             }
         },
         {
-            "apiVersion": "2015-06-15",
+            "apiVersion": "2016-09-01",
             "type": "Microsoft.Network/networkInterfaces",
             "name": "INT-Web1",
             "location": "[resourceGroup().location]",
             "dependsOn": [
                 "[resourceId('Microsoft.Network/virtualNetworks', parameters('vnetName'))]"            ],
             "properties": {
+            	"enableAcceleratedNetworking": true,
                 "enableIPForwarding": false,
                 "ipConfigurations": [
                     {
@@ -1450,7 +1467,7 @@
             }
         },
         {
-            "apiVersion": "2015-06-15",
+            "apiVersion": "2016-09-01",
             "type": "Microsoft.Network/networkInterfaces",
             "name": "INT-Dev1",
             "location": "[resourceGroup().location]",
@@ -1458,6 +1475,7 @@
                 "[resourceId('Microsoft.Network/virtualNetworks', parameters('vnetName'))]"
             ],
             "properties": {
+            	"enableAcceleratedNetworking": true,
                 "enableIPForwarding": false,
                 "ipConfigurations": [
                     {

@@ -665,9 +665,12 @@
         {
             "type": "Microsoft.Compute/availabilitySets",
             "name": "AS-FW",
-            "apiVersion": "2015-06-15",
+            "apiVersion": "2016-04-30-preview",
             "location": "[resourceGroup().location]",
             "tags": {},
+            "sku": {
+            "name": "Aligned"
+            },
             "properties": {
                 "platformUpdateDomainCount": 2,
                 "platformFaultDomainCount": 2
@@ -706,8 +709,8 @@
                     },
                     "osDisk": {
                         "name": "osdisk",
-                        "vhd": {
-                            "uri": "[concat('http://', variables('storageAccountName'), '.blob.core.windows.net/vhds/VM-FW1.vhd')]"
+                        "managedDisk": {
+                            "storageAccountType": "StandardSSD_LRS"
                         },
                         "caching": "ReadWrite",
                         "createOption": "FromImage"
@@ -777,8 +780,8 @@
                     },
                     "osDisk": {
                         "name": "osdisk",
-                        "vhd": {
-                            "uri": "[concat('http://', variables('storageAccountName'), '.blob.core.windows.net/vhds/VM-FW2.vhd')]"
+                        "managedDisk": {
+                            "storageAccountType": "StandardSSD_LRS"
                         },
                         "caching": "ReadWrite",
                         "createOption": "FromImage"
@@ -844,8 +847,8 @@
           },
           "osDisk": {
             "name": "osdisk",
-            "vhd": {
-              "uri": "[concat('http://', variables('storageAccountName'), '.blob.core.windows.net/vhds/VM-Web1-OS.vhd')]"
+            "managedDisk": {
+                "storageAccountType": "StandardSSD_LRS"
             },
             "caching": "ReadWrite",
             "createOption": "FromImage"
@@ -855,8 +858,8 @@
               "name": "datadisk",
               "diskSizeGB": "10",
               "lun": 0,
-              "vhd": {
-                "uri": "[concat('http://', variables('storageAccountName'), '.blob.core.windows.net/vhds/VM-Web1-Data.vhd')]"
+              "managedDisk": {
+                  "storageAccountType": "StandardSSD_LRS"
               },
               "createOption": "Empty"
             }
@@ -903,8 +906,8 @@
           },
           "osDisk": {
             "name": "osdisk",
-            "vhd": {
-              "uri": "[concat('http://', variables('storageAccountName'), '.blob.core.windows.net/vhds/VM-Dev1-OS.vhd')]"
+            "managedDisk": {
+                "storageAccountType": "StandardSSD_LRS"
             },
             "caching": "ReadWrite",
             "createOption": "FromImage"
@@ -914,8 +917,8 @@
               "name": "datadisk",
               "diskSizeGB": "10",
               "lun": 0,
-              "vhd": {
-                "uri": "[concat('http://', variables('storageAccountName'), '.blob.core.windows.net/vhds/VM-Dev1-Data.vhd')]"
+              "managedDisk": {
+                  "storageAccountType": "StandardSSD_LRS"
               },
               "createOption": "Empty"
             }

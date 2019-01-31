@@ -6,7 +6,7 @@ As part of the deployment options:
 
 This template deploys a firewall environment that includes:
 
-- Three (3) Palo Alto Networks Firewalls (license type user selectable)
+- Two (2) Palo Alto Networks Firewalls (license type user selectable)
 - One Standard SKU Internal Load Balancer (LB-Egress)
 - 1 Linux Web Server
 - 1 Linux Dev Server

@@ -1529,7 +1529,7 @@
             "location": "[resourceGroup().location]",
             "plan": {
                 "name": "[parameters('licenseType')]",
-                "product": "vmseries1",
+                "product": "vmseries1-beta-preview",
                 "publisher": "paloaltonetworks"
             },
             "properties": {
@@ -1547,9 +1547,9 @@
                 "storageProfile": {
                     "imageReference": {
                         "publisher": "paloaltonetworks",
-                        "offer": "vmseries1",
+                        "offer": "vmseries1-beta-preview",
                         "sku": "[parameters('licenseType')]",
-                        "version": "8.0.0"
+                        "version": "9.0.0"
                     },
                     "osDisk": {
                         "name": "osdisk",
@@ -1600,7 +1600,7 @@
             "location": "[resourceGroup().location]",
             "plan": {
                 "name": "[parameters('licenseType')]",
-                "product": "vmseries1",
+                "product": "vmseries1-beta-preview",
                 "publisher": "paloaltonetworks"
             },
             "properties": {
@@ -1618,9 +1618,9 @@
                 "storageProfile": {
                     "imageReference": {
                         "publisher": "paloaltonetworks",
-                        "offer": "vmseries1",
+                        "offer": "vmseries1-beta-preview",
                         "sku": "[parameters('licenseType')]",
-                        "version": "8.0.0"
+                        "version": "9.0.0"
                     },
                     "osDisk": {
                         "name": "osdisk",
@@ -1671,7 +1671,7 @@
             "location": "[resourceGroup().location]",
             "plan": {
                 "name": "[parameters('licenseType')]",
-                "product": "vmseries1",
+                "product": "vmseries1-beta-preview",
                 "publisher": "paloaltonetworks"
             },
             "properties": {
@@ -1689,9 +1689,9 @@
                 "storageProfile": {
                     "imageReference": {
                         "publisher": "paloaltonetworks",
-                        "offer": "vmseries1",
+                        "offer": "vmseries1-beta-preview",
                         "sku": "[parameters('licenseType')]",
-                        "version": "8.0.0"
+                        "version": "9.0.0"
                     },
                     "osDisk": {
                         "name": "osdisk",
@@ -1742,7 +1742,7 @@
             "location": "[resourceGroup().location]",
             "plan": {
                 "name": "[parameters('licenseType')]",
-                "product": "vmseries1",
+                "product": "vmseries1-beta-preview",
                 "publisher": "paloaltonetworks"
             },
             "properties": {
@@ -1760,9 +1760,9 @@
                 "storageProfile": {
                     "imageReference": {
                         "publisher": "paloaltonetworks",
-                        "offer": "vmseries1",
+                        "offer": "vmseries1-beta-preview",
                         "sku": "[parameters('licenseType')]",
-                        "version": "8.0.0"
+                        "version": "9.0.0"
                     },
                     "osDisk": {
                         "name": "osdisk",
@@ -1813,7 +1813,7 @@
             "location": "[resourceGroup().location]",
             "plan": {
                 "name": "[parameters('licenseType')]",
-                "product": "vmseries1",
+                "product": "vmseries1-beta-preview",
                 "publisher": "paloaltonetworks"
             },
             "properties": {
@@ -1831,9 +1831,9 @@
                 "storageProfile": {
                     "imageReference": {
                         "publisher": "paloaltonetworks",
-                        "offer": "vmseries1",
+                        "offer": "vmseries1-beta-preview",
                         "sku": "[parameters('licenseType')]",
-                        "version": "8.0.0"
+                        "version": "9.0.0"
                     },
                     "osDisk": {
                         "name": "osdisk",
@@ -1884,7 +1884,7 @@
             "location": "[resourceGroup().location]",
             "plan": {
                 "name": "[parameters('licenseType')]",
-                "product": "vmseries1",
+                "product": "vmseries1-beta-preview",
                 "publisher": "paloaltonetworks"
             },
             "properties": {
@@ -1902,9 +1902,9 @@
                 "storageProfile": {
                     "imageReference": {
                         "publisher": "paloaltonetworks",
-                        "offer": "vmseries1",
+                        "offer": "vmseries1-beta-preview",
                         "sku": "[parameters('licenseType')]",
-                        "version": "8.0.0"
+                        "version": "9.0.0"
                     },
                     "osDisk": {
                         "name": "osdisk",
@@ -1955,7 +1955,7 @@
             "location": "[resourceGroup().location]",
             "plan": {
                 "name": "[parameters('licenseType')]",
-                "product": "vmseries1",
+                "product": "vmseries1-beta-preview",
                 "publisher": "paloaltonetworks"
             },
             "properties": {
@@ -1973,9 +1973,9 @@
                 "storageProfile": {
                     "imageReference": {
                         "publisher": "paloaltonetworks",
-                        "offer": "vmseries1",
+                        "offer": "vmseries1-beta-preview",
                         "sku": "[parameters('licenseType')]",
-                        "version": "8.0.0"
+                        "version": "9.0.0"
                     },
                     "osDisk": {
                         "name": "osdisk",
@@ -2026,7 +2026,7 @@
             "location": "[resourceGroup().location]",
             "plan": {
                 "name": "[parameters('licenseType')]",
-                "product": "vmseries1",
+                "product": "vmseries1-beta-preview",
                 "publisher": "paloaltonetworks"
             },
             "properties": {
@@ -2044,9 +2044,9 @@
                 "storageProfile": {
                     "imageReference": {
                         "publisher": "paloaltonetworks",
-                        "offer": "vmseries1",
+                        "offer": "vmseries1-beta-preview",
                         "sku": "[parameters('licenseType')]",
-                        "version": "8.0.0"
+                        "version": "9.0.0"
                     },
                     "osDisk": {
                         "name": "osdisk",
@@ -2097,7 +2097,7 @@
             "location": "[resourceGroup().location]",
             "plan": {
                 "name": "[parameters('licenseType')]",
-                "product": "vmseries1",
+                "product": "vmseries1-beta-preview",
                 "publisher": "paloaltonetworks"
             },
             "properties": {
@@ -2115,9 +2115,9 @@
                 "storageProfile": {
                     "imageReference": {
                         "publisher": "paloaltonetworks",
-                        "offer": "vmseries1",
+                        "offer": "vmseries1-beta-preview",
                         "sku": "[parameters('licenseType')]",
-                        "version": "8.0.0"
+                        "version": "9.0.0"
                     },
                     "osDisk": {
                         "name": "osdisk",

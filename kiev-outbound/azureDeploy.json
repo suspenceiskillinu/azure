@@ -663,7 +663,7 @@
             "dependsOn": []
         },
         {
-            "apiVersion": "2015-06-15",
+            "apiVersion": "2018-06-01",
             "type": "Microsoft.Compute/virtualMachines",
             "name": "VM-FW1",
             "location": "[resourceGroup().location]",
@@ -733,7 +733,7 @@
             ]
         },
         {
-            "apiVersion": "2015-06-15",
+            "apiVersion": "2018-06-01",
             "type": "Microsoft.Compute/virtualMachines",
             "name": "VM-FW2",
             "location": "[resourceGroup().location]",
@@ -803,7 +803,7 @@
             ]
         },
     {
-      "apiVersion": "2017-12-01",
+      "apiVersion": "2018-06-01",
       "type": "Microsoft.Compute/virtualMachines",
       "name": "VM-Web1",
       "location": "[resourceGroup().location]",
@@ -861,7 +861,7 @@
       }
     },
     {
-      "apiVersion": "2017-12-01",
+      "apiVersion": "2018-06-01",
       "type": "Microsoft.Compute/virtualMachines",
       "name": "VM-Dev1",
       "location": "[resourceGroup().location]",

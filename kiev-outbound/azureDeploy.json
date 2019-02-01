@@ -836,7 +836,7 @@
           },
           "dataDisks": [
             {
-              "name": "datadisk",
+              "name": "datadisk1",
               "diskSizeGB": "10",
               "lun": 0,
               "managedDisk": {
@@ -894,7 +894,7 @@
           },
           "dataDisks": [
             {
-              "name": "datadisk",
+              "name": "datadisk2",
               "diskSizeGB": "10",
               "lun": 0,
               "managedDisk": {

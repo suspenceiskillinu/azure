@@ -692,7 +692,7 @@
                         "version": "9.0.0"
                     },
                     "osDisk": {
-                        "name": "osdisk",
+                        "name": "osdisk1",
                         "managedDisk": {
                             "storageAccountType": "StandardSSD_LRS"
                         },
@@ -762,7 +762,7 @@
                         "version": "9.0.0"
                     },
                     "osDisk": {
-                        "name": "osdisk",
+                        "name": "osdisk2",
                         "managedDisk": {
                             "storageAccountType": "StandardSSD_LRS"
                         },
@@ -827,7 +827,7 @@
             "version": "latest"
           },
           "osDisk": {
-            "name": "osdisk",
+            "name": "osdisk3",
             "managedDisk": {
                 "storageAccountType": "StandardSSD_LRS"
             },
@@ -885,7 +885,7 @@
             "version": "latest"
           },
           "osDisk": {
-            "name": "osdisk",
+            "name": "osdisk4",
             "managedDisk": {
                 "storageAccountType": "StandardSSD_LRS"
             },
